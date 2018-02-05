@@ -1,71 +1,37 @@
-.main {
-    background-image: url(../img/background.jpeg);
-    background-size: cover;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-    box-sizing: border-box;
+.main{
+
 }
 
-.drumkit {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.title {
+    text-align: center;
+}
+
+.formated-list{
     list-style: none;
-    padding: 0;
-    flex-wrap: wrap;
-    display: flex;
-    width: 80%;
-    flex-direction: row;
-    justify-content: space-around;
+
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 50px;
 }
 
+.formated-list__item{
 
-
-.drumkit__button{
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: rgba(0,0,0,0.71);
-    width: 90px;
-    height: 60px;
-    box-sizing: border-box;
+    margin-top: 20px;
 }
 
-
-.drumkit__title{
-    padding: 0;
-    margin: 0;
+.formated-list__link{
+    color: green;
     font-family: Segoe UI sans-serif;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    pointer-events: none;
+    font-size: 24px;
+    transition: color 0.3s;
 }
 
-.drumkit__description{
-    padding: 0;
-    margin: 0;
-    font-family: Segoe UI sans-serif;
-    font-size: 15px;
-    text-align: center;
-    color: yellow;
-    text-transform: uppercase;
-    pointer-events: none;
+.formated-list__link:link{
+    text-decoration: none;
 }
-
-.drumkit__button--active{
-    border: 4px solid yellow;
+.formated-list__link:visited{
+    color: darkgreen;
 }
-
-.drumkit__button--active .drumkit__title{
-    font-size: 23px;
-}
-
-.drumkit__button--active .drumkit__description{
-    font-size: 16px;
+.formated-list__link:hover{
+    color: lightgreen;
 }

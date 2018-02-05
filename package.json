@@ -1,7 +1,7 @@
 {
-  "name": "js30_1",
+  "name": "js30",
   "version": "0.1.0",
-  "description": "JS DrumKit",
+  "description": "JS Projects",
   "main": "index.js",
   "directories": {
     "doc": "doc"
