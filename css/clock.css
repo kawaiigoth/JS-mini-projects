@@ -1,0 +1,61 @@
+.background{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left : 0;
+    right:  0;
+    background-size: cover;
+    background-image: url(../img/background.jpeg);
+    filter: blur(5px);
+}
+
+
+.clock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    border: 25px solid white;
+    border-radius: 500px;
+    filter: none;
+}
+
+.clock__arrow-handler{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: white;
+    border: 10px solid white;
+}
+
+.clock__arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all 0.05s;
+    transform-origin: left;
+    filter: drop-shadow(16px 16px 20px blue);
+}
+
+.clock__seconds-arrow{
+    width: 230px;
+    height: 2px;
+    background-color: white;
+}
+
+.clock__minutes-arrow{
+    width: 240px;
+    height: 5px;
+    background-color: white;
+}
+.clock__hours-arrow{
+    width: 180px;
+    height: 6px;
+    background-color: white;
+}
