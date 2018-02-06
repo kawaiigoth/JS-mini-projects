@@ -59,15 +59,17 @@
     });
 
     function render(){
-        let arr = [];
+        let val = getFilters();
+        console.log(val);
+        IMAGE.style.filter = val;
+    }
 
+    function getFilters(){
+        let arr = [];
         Object.keys(FILTERS).sort().forEach((key,i) =>{
             arr.push(FILTERS[key]);
         });
-        console.log(arr.join(' ') + ";");
-        let val = "saturate("+50+"%)";
-        IMAGE.style.filter = val;
-
+        return arr.join(' ');
     }
 
 }());
