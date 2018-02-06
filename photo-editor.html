@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>JS mini-Projects</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/photoeditor.css">
+</head>
+<body>
+
+<header class="hero">
+    <h1>PHOTOEDITOR v0.1</h1>
+    <span>Just filters...</span>
+    <hr>
+</header>
+
+<main class="main">
+<section class="editor">
+    <div class="editor__picture">
+        <img src="#" id="Image">
+    </div>
+    <div class="editor__menu">
+        <div class="editor__uploader">
+            <input type="file"  accept="image/*">
+        </div>
+        <nav class="editor__regulator">
+            <label>Blur : <input id="Blur" type="range" min="0" max="100" step="1" value="0"></label>
+            <label>Grayscale : <input id="Grayscale" type="range" min="0" max="100" step="1" value="0"></label>
+            <label>Sepia : <input id="Sepia" type="range" min="0" max="100" step="1" value="0"></label>
+            <label>Brightnes :<input id="Brightnes" type="range" min="0" max="100" step="1" value="0"></label>
+            <label>Contrast :<input id="Contrast" type="range" min="0" max="100" step="1" value="0"></label>
+            <label>Hue :<input id="Hue" type="range" min="0" max="100" step="1" value="0"></label>
+            <label>Invert :<input id="Invert" type="range" min="0" max="100" step="1" value="0"></label>
+            <label>Saturate :<input id="Saturate" type="range" min="0" max="100" step="1" value="0"></label>
+        </nav>
+    </div>
+</section>
+
+
+</main>
+<script src="js/photoeditor.js"></script>
+</body>
+</html>
