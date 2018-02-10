@@ -2,6 +2,10 @@ body{
     background-color: #ffa800;
 }
 
+mark{
+    background-color: #ffa800;
+}
+
 .container{
     margin: 0 auto;
     width: 60%;

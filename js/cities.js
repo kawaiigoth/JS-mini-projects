@@ -39,16 +39,19 @@
         })
     }
 
+    function formated(num){
+        return new Intl.NumberFormat('en-US').format(num);
+    }
+
     SEARCH.addEventListener('input', function (e) {
-        let word = e.target.value;
+        let word = e.target.value.toLowerCase();
         while(RESULT.firstChild){
             RESULT.removeChild(RESULT.firstChild);
         }
-        console.log(RESULT.children);
         getData().then(
             result => {
                 let filtered = result.filter(item => {
-                    if (item.city.includes(word) || item.state.includes(word)) {
+                    if (item.city.toLowerCase().includes(word) || item.state.toLowerCase().includes(word)) {
                         return item;
                     }
                 });
@@ -68,8 +71,22 @@
                     popul.className = "result__population";
                     bg.className = "result__bg";
 
+                    //TODO Доделать хайлайтер
+/*                    let index = item.city.indexOf(word);
+                    let index1 = item.state.indexOf(word);
+                    if ( index >= 0 )
+                    {
+                        item.city = item.city.substring(0,index) + "<mark>" + item.city.substring(index,index+word.length) + "</mark>" + item.city.substring(index + word.length);
+                        console.log(item.city);
+
+                    } else {
+                        item.state = item.state.substring(0,index1) + "<mark>" + item.state.substring(index1,index1+word.length) + "</mark>" + item.state.substring(index1 + word.length);
+
+                    }*/
+
+
                     title.innerHTML = item.city + ' ' + item.state;
-                    popul.innerHTML = item.population;
+                    popul.innerHTML = formated(item.population);
 
                     elem.appendChild(bg);
                     elem.appendChild(title);
