@@ -1,0 +1,11 @@
+.container{
+    width: 100%;
+    background-color: yellow;
+    text-align: center;
+}
+
+#Canvas {
+    border: 2px solid black;
+    margin: 0 auto;
+    background-color: white;
+}
