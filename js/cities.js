@@ -6,7 +6,12 @@
     let cache = null;
 
     function _ajax(source) {
-        return new Promise((resolve, reject) => {
+        fetch(source).then(
+            result => {return result.json()},
+            err =>{ return err; }
+        );
+
+        /*return new Promise((resolve, reject) => {
             let XHR = new XMLHttpRequest();
             XHR.open('GET', source, true);
             XHR.send();
@@ -19,7 +24,7 @@
                     resolve(JSON.parse(XHR.responseText));
                 }
             };
-        })
+        })*/
     }
 
     function getData() {
